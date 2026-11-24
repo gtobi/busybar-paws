@@ -1,0 +1,10 @@
+{
+  "format_version": 1,
+  "id": "io.github.gtobi.paws",
+  "name": "Paws",
+  "version": "0.1.0",
+  "api_version": "27.14.0",
+  "description": "A desk cat that only thrives when you pause.",
+  "author": "Tobias Gehrig",
+  "heap_size_kib": 128
+}

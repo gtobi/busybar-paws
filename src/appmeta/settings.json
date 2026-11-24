@@ -1,0 +1,116 @@
+{
+  "format_version": 1,
+  "version": 7,
+  "fields": {
+    "minutes": {
+      "type": "integer",
+      "label": "Focus session, minutes",
+      "description": "Starting length. The wheel changes it by five.",
+      "default": 25,
+      "min": 1,
+      "max": 180
+    },
+    "sessions": {
+      "type": "integer",
+      "label": "Focus sessions a day",
+      "description": "The day's goal. 0: no goal, sessions are only counted.",
+      "default": 4,
+      "min": 0,
+      "max": 20
+    },
+    "break_minutes": {
+      "type": "integer",
+      "label": "Break, minutes",
+      "description": "A break begins when a session ends. 0: no breaks, and Paws asks for none.",
+      "default": 5,
+      "min": 0,
+      "max": 60
+    },
+    "long_break": {
+      "type": "integer",
+      "label": "Long break, minutes",
+      "description": "The break after every fourth session of the day. 0: like the others.",
+      "default": 15,
+      "min": 0,
+      "max": 60
+    },
+    "break_due": {
+      "type": "integer",
+      "label": "Break overdue after, minutes",
+      "description": "Paws asks for a break this long after the last one.",
+      "default": 60,
+      "min": 15,
+      "max": 240
+    },
+    "look_away": {
+      "type": "boolean",
+      "label": "Look away",
+      "description": "In a session, every 20 minutes Paws looks out of a window for 20 seconds. So should you.",
+      "default": true
+    },
+    "glasses": {
+      "type": "integer",
+      "label": "Glasses of water a day",
+      "description": "Paws gets thirsty at even gaps through the working day until this many are logged.",
+      "default": 6,
+      "min": 1,
+      "max": 20
+    },
+    "lunch": {
+      "type": "boolean",
+      "label": "Lunch",
+      "description": "Paws asks for lunch.",
+      "default": true
+    },
+    "lunch_from": {
+      "type": "time",
+      "label": "Lunch, from",
+      "description": "From this time on, until you eat or say you have.",
+      "default": "12:00"
+    },
+    "meal_minutes": {
+      "type": "integer",
+      "label": "A meal, minutes",
+      "description": "The break Paws begins for lunch. It counts as lunch after ten minutes.",
+      "default": 30,
+      "min": 5,
+      "max": 120
+    },
+    "day_start": {
+      "type": "time",
+      "label": "Working day, from",
+      "description": "From this time on a press wakes Paws.",
+      "default": "09:00"
+    },
+    "day_end": {
+      "type": "time",
+      "label": "Working day, to",
+      "description": "Paws sleeps from this time to the start of the working day.",
+      "default": "17:00"
+    },
+    "remind_end": {
+      "type": "boolean",
+      "label": "Remind me when the day ends",
+      "description": "Paws says the day is done and waits for OK before it sleeps.",
+      "default": true
+    },
+    "weekends_off": {
+      "type": "boolean",
+      "label": "Weekends off",
+      "description": "On Saturday and Sunday Paws sleeps and asks for nothing.",
+      "default": true
+    },
+    "smoking": {
+      "type": "boolean",
+      "label": "Smoke breaks",
+      "description": "Adds a smoke break to the kinds of break. Paws coughs, and counts them for the day.",
+      "default": false
+    },
+    "sound": {
+      "type": "boolean",
+      "label": "Sound",
+      "description": "A sound when a session or a break ends, and when the day does.",
+      "default": true
+    }
+  }
+}
